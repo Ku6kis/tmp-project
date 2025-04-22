@@ -17,13 +17,12 @@ public class MyApp {
                 OriginalWord = OriginalWord.toLowerCase();
                 WordAfter = WordAfter.toLowerCase();
             } else {
-                System.out.println("Wrong!");
+                System.out.println("Sorry that word is not one letter away, thanks for playing tho!");
                 break;
             }
         }
 
         }
-    }
 
     public static boolean isOneLetterAway(String a, String b) {
         if (a.length() != b.length()) {
@@ -39,8 +38,4 @@ public class MyApp {
 
         return DIFFERENCES == 1;
     }
-}
-
-
-
 }
