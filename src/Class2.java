@@ -14,7 +14,8 @@ public class MyApp {
 
             if (isOneLetterAway(OriginalWord, WordAfter)) {
                 System.out.println("Let's continue!");
-                OriginalWord = WordAfter;
+                OriginalWord = OriginalWord.toLowerCase();
+                WordAfter = WordAfter.toLowerCase();
             } else {
                 System.out.println("Wrong!");
                 break;
