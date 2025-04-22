@@ -14,7 +14,7 @@ public class MyApp {
 
             if (isOneLetterAway(OriginalWord, WordAfter)) {
                 System.out.println("Let's continue!");
-                currentWord = nextWord;
+                OriginalWord = WordAfter;
             } else {
                 System.out.println("Wrong!");
                 break;
