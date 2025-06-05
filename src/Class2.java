@@ -4,13 +4,26 @@ public class MyApp {
     public static void main(String [] args) {
         Console c = System.console(); 
 
-        String original-word = c.readLine("give a word, any word:D!  : ");
+        String OriginalWord = c.readLine("give a word, any word:D!  : ");
 
 
 
         
-        while (isoneletteraway = true){
-        System.out.println("give a word that is one letter away from last word:");
+            while (true) {
+            String WordAfter = c.readLine("Give a word that differs in only one letter: ");
+
+            if (isOneLetterAway(OriginalWord, WordAfter)) {
+                System.out.println("Let's continue!");
+                currentWord = nextWord;
+            } else {
+                System.out.println("Wrong!");
+                break;
+            }
+        }
+        
         }
     }
+
+
+
 }
