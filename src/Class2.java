@@ -4,7 +4,7 @@ public class MyApp {
     public static void main(String [] args) {
         Console c = System.console(); 
 
-        String original-word = c.readLine("give a word: ");
+        String original-word = c.readLine("give a word, any word:D!  : ");
 
 
 
